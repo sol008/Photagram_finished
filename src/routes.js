@@ -7,6 +7,9 @@ import CoursesPage from './components/course/CoursesPage';
 import ManageCoursePage from './components/course/ManageCoursePage'; //eslint-disable-line import/no-named-as-default
 
 import FakemainPage from './components/about/FakemainPage'
+import MyProfilePage from './components/profile/myprofile'
+import MyOrderPage from './components/profile/myorder'
+import MyOffersPage from './components/profile/myoffers'
 
 export default (
   <Route path="/" component={App}>
@@ -16,5 +19,8 @@ export default (
     <Route path="course/:id" component={ManageCoursePage} />
     <Route path="about" component={AboutPage} />
     <Route path="fakemain" component={FakemainPage} />
+    <Route path="myprofile" component={MyProfilePage} />
+    <Route path="myorder" component={MyOrderPage} />
+    <Route path="myoffers" component={MyOffersPage} />
   </Route>
 );
