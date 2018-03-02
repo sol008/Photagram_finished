@@ -41,7 +41,7 @@ class CheckoutPage extends React.Component {
           <p><strong>Order Summary:</strong></p>
           <br />
           <p>The total amount is: $40</p>
-          <form action="orderPlacedPage.html">
+          <form action="orderplaced">
             <button className="orderbtn">Order</button>
           </form>
       </div>

@@ -1,10 +1,12 @@
-import React from 'react';
-import {Link} from 'react-router';
-import icon from './avatar1.jpg'
+import React, {PropTypes} from 'react';
+import { Link, IndexLink } from 'react-router';
+import icon from './avatar1.jpg';
+import {browserHistory} from "react-router";
 
 class LoginPage extends React.Component {
   toMain() {
-    location.href = "MainPage.js";
+    // location.href = "MainPage.js";
+    browserHistory.push("main");
   }
 
   render() {
@@ -43,10 +45,10 @@ class LoginPage extends React.Component {
 
         <br/>
 
-        <span className="pwd">Forgot <a href="newPassword.html">password?</a></span>
+        <span className="pwd">Forgot <a href="newpass">password?</a></span>
         <br />
 
-        <span className="newaccount">Don't have an <a href="registerPage.html">account?</a></span>
+        <span className="newaccount">Don't have an <a href="register">account?</a></span>
       </div>
     );
   }

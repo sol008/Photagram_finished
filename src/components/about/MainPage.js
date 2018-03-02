@@ -1,5 +1,7 @@
-import React from 'react';
-import {Link} from 'react-router';
+import React, {PropTypes} from 'react';
+import { Link, IndexLink } from 'react-router';
+
+
 import one from './1.jpg';
 import two from './2.jpg';
 import three from './3.jpg';
@@ -28,9 +30,12 @@ class MainPage extends React.Component {
     return (
       <div>
 
-     <li><a href="Pictures.html">Photographs</a></li>
-     <li><a href="Videos.html">Videos</a></li>
-     <li><a href="Paintings.html">Paintings</a></li>
+     
+
+     <li><IndexLink to="/picture" activeClassName="active">Photographs</IndexLink></li>
+     <li><IndexLink to="/video" activeClassName="active">Videos</IndexLink></li>
+     <li><IndexLink to="/painting" activeClassName="active">Paintings</IndexLink></li>
+
 
 
 

@@ -1,5 +1,5 @@
-﻿import React from 'react';
-import {Link} from 'react-router';
+﻿import React, {PropTypes} from 'react';
+import { Link, IndexLink } from 'react-router';
 import one from './1.jpg';
 import two from './2.jpg';
 import three from './3.jpg';
@@ -28,11 +28,11 @@ class PaintingPage extends React.Component {
     return (
       <div>
 
-     <li><a href="Pictures.html">Photographs</a></li>
-     <li><a href="Videos.html">Videos</a></li>
-     <li><a href="Paintings.html">Paintings</a></li>
+     <li><IndexLink to="/picture" activeClassName="active">Photographs</IndexLink></li>
+     <li><IndexLink to="/video" activeClassName="active">Videos</IndexLink></li>
+     <li><IndexLink to="/painting" activeClassName="active">Paintings</IndexLink></li>
 
- <h1>Paintings
+ <h1>Paintings</h1>
         <h4>Sort By   <select name="sort">
             <option value="Newest">Newest</option>
             <option value="View Count">View Count</option>

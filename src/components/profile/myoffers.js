@@ -77,6 +77,11 @@ class FakemainPage extends React.Component {
         <h5>60-minute lessons</h5>
         <p>Some text...</p>
         </div>
+
+          <form action="checkout" method="get">
+          <button  class = "button button3">Continue</button>
+           </form>
+
 <button onClick={this.pop.bind(this)}> 
   About us
 </button>

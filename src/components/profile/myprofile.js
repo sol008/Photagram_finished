@@ -70,11 +70,11 @@ class FakemainPage extends React.Component {
     <h2>Reviews</h2>
     <p>Some text..</p>
 
-       <form action="checkOffers.html" method="get">
+       <form action="myoffers" method="get">
           <button class = "button button2">My Offer</button>
 
       </form>
-            <form action="myOrder.html" method="get">
+            <form action="myorder" method="get">
           <button  class = "button button3">My Order</button>
            </form>
 
@@ -88,7 +88,7 @@ class FakemainPage extends React.Component {
         <h3>Follow Me</h3>
         <p>Some text..</p>
       </div>
-      
+
 <button onClick={this.pop.bind(this)}> 
   About us
 </button>
