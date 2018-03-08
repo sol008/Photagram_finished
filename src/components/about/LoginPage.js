@@ -32,8 +32,8 @@ class LoginPage extends React.Component {
 
           <br/>
 
-          <label>
-            <input type="checkbox" defaultChecked="checked" /> Remember me
+          <label id='111'>
+            <input type="checkbox" defaultChecked="checked" />Remember me
           </label>
         </div>
 
