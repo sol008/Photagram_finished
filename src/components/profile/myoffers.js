@@ -11,7 +11,17 @@ var divStyle = {
 };
 
 // var imageName = require ('./6.jpg');
-
+function Deal(props){
+  return(
+      <td className= "card"  >
+  <span className="close">&times;</span>
+        <h2 >{props.id} </h2>
+        <p> {props.type}</p>
+      <hr  />
+      <p> ${props.price}/{props.type}</p>
+      </td>
+  );
+}
 
 
 
@@ -40,30 +50,12 @@ class FakemainPage extends React.Component {
         <h2 >My current offers</h2>
 <table>
  <tr>
-      <td className= "card"  >
-  <span className="close">&times;</span>
-        <h2 >1 </h2>
-        <p> Photo</p>
-      <hr  />
-      <p> $45/Photo</p>
-      </td>
+      <Deal id = {"1"} type ={"photo"} price={"35"}/>
+      <Deal id = {"2"} type ={"picture"} price={"30"}/>
+      <Deal id = {"3"} type ={"artwork"} price={"25"}/>
 
 
-      <td className= "card"  >
-  <span className="close">&times;</span>
-        <h2 >2 </h2>
-        <p> Photo</p>
-      <hr  />
-      <p> $35/Photo</p>
-      </td>
 
-      <td className= "card"  >
-  <span className="close">&times;</span>
-        <h2 >3 </h2>
-        <p> Photo</p>
-      <hr  />
-      <p> $30/Photo</p>
-      </td>
       </tr>
 
       </table>

@@ -7,7 +7,7 @@ import two from './2.jpg';
 import three from './3.jpg';
 import four from './4.jpg';
 import five from './5.jpg';
-import six from './6.jpg';
+// import six from './6.jpg';
 import seven from './7.jpg';
 import eight from './8.jpg';
 import eleven from './11.jpg';
@@ -16,7 +16,7 @@ import thirteen from './13.jpg';
 import fourteen from './14.jpg';
 import fifteen from './15.jpg';
 
-var divStyle = {
+let divStyle = {
   color: 'Blue'
 };
 
@@ -44,7 +44,7 @@ class MainPage extends React.Component {
 
 
 <div className="column">
-    <img id="myImg6"  src = {six} alt="six" className="hover-shadow cursor" />
+    <img id="myImg6"  src = {require('./6.jpg')} alt="six" className="hover-shadow cursor" />
     <a href="profiles.html">➣➣➣</a>
 </div>
 

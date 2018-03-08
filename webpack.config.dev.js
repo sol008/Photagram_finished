@@ -32,7 +32,7 @@ export default {
       {test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000&mimetype=application/octet-stream"},
       {test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000&mimetype=image/svg+xml"},
 
-      {test: /\.(png|jpg)$/, loader: 'url?limit=25000'},
+      {test: /\.(png|jpg)$/, loader: "file"}
       // {test: /\.jsx?$/,loader: 'babel', query:{presets:['es2015', 'react']}}
         
     ]
