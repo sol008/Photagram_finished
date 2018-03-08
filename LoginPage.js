@@ -7,9 +7,6 @@ class LoginPage extends React.Component {
   toMain() {
     // location.href = "MainPage.js";
     browserHistory.push("main");
-    this.setState({
-      status: "loggedin"
-    });
   }
 
   render() {
@@ -35,8 +32,8 @@ class LoginPage extends React.Component {
 
           <br/>
 
-          <label>
-            <input type="checkbox" defaultChecked="checked" /> Remember me
+          <label id='111'>
+            <input type="checkbox" defaultChecked="checked" />Remember me
           </label>
         </div>
 

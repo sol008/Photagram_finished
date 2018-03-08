@@ -10,11 +10,9 @@ var backStyle = {
 class NewPasswordPage extends React.Component {
   resetPass() {
     var newPass = document.getElementById("new").value;
-    this.state = {isShowingPass: false};
   }
 
   checkReset() {
-    this.state = {isShowingPass: true}
     var y = document.getElementById("new").value;
     document.getElementById("d").innerHTML = y;
   }
@@ -34,8 +32,8 @@ class NewPasswordPage extends React.Component {
           <br />
           <p>Click the button to reset your password</p>
 
-          <button onClick={this.resetPass.bind(this)}>reset</button>
-          <button onClick={this.checkReset.bind(this)}>check</button>
+          <button  onClick={this.resetPass.bind(this)}>reset</button>
+          <button id='b1' onClick={this.checkReset.bind(this)}>check</button>
 
           <br />
 
