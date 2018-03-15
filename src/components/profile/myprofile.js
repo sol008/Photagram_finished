@@ -53,30 +53,7 @@ class myprofile extends React.Component {
   pop  ()  {
     alert("About Us");
   }
-      //  imgOnclick(id){
-      //     alert(props.num)
-      //  // imgOnclick(id,num){
-      //     var row1 = document.getElementById("row1");
-      //     // var row2 = document.getElementById("row2");
-      //     // var row3 = document.getElementById("row3");
-      //     // var rows = [row1,row2,row3]
-      //     document.getElementById(props.id).style.display = "none";
-      //         // if(row1.cells.length < 4){
-      //       if(props.num < 3){
-      //         plus1.style.display = "block";
-      //         a[0] = a[0] - 1;
-      //       }
-      //       // else if(num < 6){
-      //       //   plus2.style.display = "block";
-      //       //   a[1] = a[1] - 1;
-      //       // }
-      //       // else{
-      //       //   plus3.style.display = "block";
-      //       //   a[2] = a[2] - 1;
-      //       // }
 
-      //     // }
-      // }
 
            imgOnclick(id,num){
               var ar = this.state.a;
@@ -120,32 +97,6 @@ class myprofile extends React.Component {
                     plus1.style.display = "none";
                   }
                 }
-                // if(num == 1){
-                //   a[num] = a[num] + 1;
-                //   if(a[num] == 1){
-                //     p4.style.display = "block";
-                //   }
-                //   else if(a[num] == 2){
-                //     p5.style.display = "block";
-                //   }
-                //   else if(a[num] == 3){
-                //     p6.style.display = "block";
-                //     plus2.style.display = "none";
-                //   }
-                // }
-                // if(num == 2){
-                //   a[num] = a[num] + 1;
-                //   if(a[num] == 1){
-                //     p7.style.display = "block";
-                //   }
-                //   else if(a[num] == 2){
-                //     p8.style.display = "block";
-                //   }
-                //   else if(a[num] == 3){
-                //     p9.style.display = "block";
-                //     plus3.style.display = "none";
-                //   }
-                // }
 
           }
    edit() {
@@ -162,11 +113,19 @@ class myprofile extends React.Component {
   render() {
     return (
 
-      <div>
+      <div className="body">
 
-    <img id="myImg6"  src = {sixteen} alt="sixteen" />
+      <div className="header">
+</div>
+
+      <div className="row">
+      <div className="leftcolumn">
+       <div className="card">
+    <img id="myImg6"  src = {sixteen} alt="sixteen" style={{"width":"150px","height":"100px"}}/>
     <h1 >First and Last Name</h1> 
     <p> SanDiego, CA </p>
+      </div>
+
 
       <div className="topnav">
      <a >Intro</a>
@@ -177,46 +136,52 @@ class myprofile extends React.Component {
         <h2>Intro</h2>
         <p  id = "d"></p>
         <input type="text" placeholder="Enter something..." id= "new" style = {{"display":"none"}} />
-        <button className = "button" onClick={this.edit.bind(this)} >Edit Intro</button>
+        <button className = "button button2" onClick={this.edit.bind(this)} >Edit Intro</button>
         <h2>Works</h2>
 
         <h3>Pictures</h3>
         <table>
       <tr id="row1">
-      <Image id ={"p1"} pic={'./1.jpg'} click={() => this.imgOnclick("p1",0)} />
-      <Image id ={"p2"} pic={'./2.jpg'} click={() => this.imgOnclick("p2",1)} />
-      <Image id ={"p3"} pic={'./3.jpg'} click={() => this.imgOnclick("p3",2)} />
+      <Image id ="p1" pic={'./1.jpg'} click={() => this.imgOnclick("p1",0)} />
+      <Image id ="p2" pic={'./2.jpg'} click={() => this.imgOnclick("p2",1)} />
+      <Image id ="p3" pic={'./3.jpg'} click={() => this.imgOnclick("p3",2)} />
       <th ><img src={require('./plus_img.png')} id="plus1" onClick={()=>this.plusOnclick(0)} style={{"width":"240px","height":"240px","display":"none"}} /></th>
       </tr>
     </table>
 
 
-        <h3>Paintings</h3>
-        <h3>Photograph</h3>
-
 
     <h2>Reviews</h2>
     <p>Some text..</p>
+    </div>
 
+
+    <div className="rightcolumn">
+      <div className="card">
+       <div className="checkOffer">
        <form action="myoffers" method="get">
-          <button class = "button button2">My Offer</button>
+          <button className = "button button2">My Offer</button>
 
       </form>
             <form action="myorder" method="get">
-          <button  class = "button button3">My Order</button>
+          <button  className = "button button3">My Order</button>
            </form>
-
-      <div class="card">
+           </div>
+           </div>
+      <div className="card">
         <h3>Popular Post</h3>
         <div className="fakeimg"><p>Image</p></div>
         <div className="fakeimg"><p>Image</p></div>
         <div className="fakeimg"><p>Image</p></div>
       </div>
-      <div class="card">
+      <div className="card">
         <h3>Follow Me</h3>
         <p>Some text..</p>
       </div>
+      </div>  
+      </div>
 
+<div className="footer">
 <button onClick={this.pop.bind(this)}> 
   About us
 </button>
@@ -224,7 +189,7 @@ class myprofile extends React.Component {
   <p>Copyright &copy;photagram.com</p>
 </div>
 
-
+</div>
 
 
 );
