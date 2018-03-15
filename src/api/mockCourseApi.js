@@ -8,49 +8,49 @@ const courses = [
     id: "react-creating-reusable-components",
     title: "Creating Reusable React Components",
     watchHref: "http://pluralsight.com/courses/react-creating-reusable-components",
-    authorId: "cory-house",
-    length: "6:20",
-    category: "JavaScript"
+    authorId: "me",
+    length: "$20",
+    category: "Photograph"
   },
   {
     id: "react-flux-building-applications",
     title: "Building Applications in React and Flux",
     watchHref: "http://www.pluralsight.com/courses/react-flux-building-applications",
-    authorId: "cory-house",
-    length: "5:08",
-    category: "JavaScript"
+    authorId: "me",
+    length: "$8",
+    category: "Photograph"
   },
   {
     id: "clean-code",
     title: "Clean Code: Writing Code for Humans",
     watchHref: "http://www.pluralsight.com/courses/writing-clean-code-humans",
-    authorId: "cory-house",
-    length: "3:10",
-    category: "Software Practices"
+    authorId: "me",
+    length: "$10",
+    category: "Video"
   },
   {
     id: "architecture",
     title: "Architecting Applications for the Real World",
     watchHref: "http://www.pluralsight.com/courses/architecting-applications-dotnet",
-    authorId: "cory-house",
-    length: "2:52",
-    category: "Software Architecture"
+    authorId: "me",
+    length: "$50",
+    category: "Video"
   },
   {
     id: "career-reboot-for-developer-mind",
     title: "Becoming an Outlier: Reprogramming the Developer Mind",
     watchHref: "http://www.pluralsight.com/courses/career-reboot-for-developer-mind",
-    authorId: "cory-house",
-    length: "2:30",
-    category: "Career"
+    authorId: "me",
+    length: "$30",
+    category: "Painting"
   },
   {
     id: "web-components-shadow-dom",
     title: "Web Component Fundamentals",
     watchHref: "http://www.pluralsight.com/courses/web-components-shadow-dom",
-    authorId: "cory-house",
-    length: "5:10",
-    category: "HTML5"
+    authorId: "me",
+    length: "$10",
+    category: "Painting"
   }
 ];
 
