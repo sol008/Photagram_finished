@@ -6,7 +6,6 @@ const CourseList = ({courses}) => {
     <table className="table">
       <thead>
       <tr>
-        <th>&nbsp;</th>
         <th>Offer</th>
         <th>Category</th>
         <th>Price</th>

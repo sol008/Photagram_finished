@@ -6,7 +6,7 @@ import delay from './delay';
 const courses = [
   {
     id: "react-creating-reusable-components",
-    title: "Creating Reusable React Components",
+    title: "Self Portrait",
     watchHref: "http://pluralsight.com/courses/react-creating-reusable-components",
     authorId: "me",
     length: "$20",
@@ -14,7 +14,7 @@ const courses = [
   },
   {
     id: "react-flux-building-applications",
-    title: "Building Applications in React and Flux",
+    title: "Landscape",
     watchHref: "http://www.pluralsight.com/courses/react-flux-building-applications",
     authorId: "me",
     length: "$8",
@@ -22,7 +22,7 @@ const courses = [
   },
   {
     id: "clean-code",
-    title: "Clean Code: Writing Code for Humans",
+    title: "Star Wars",
     watchHref: "http://www.pluralsight.com/courses/writing-clean-code-humans",
     authorId: "me",
     length: "$10",
@@ -30,7 +30,7 @@ const courses = [
   },
   {
     id: "architecture",
-    title: "Architecting Applications for the Real World",
+    title: "Scarbourogh Fair",
     watchHref: "http://www.pluralsight.com/courses/architecting-applications-dotnet",
     authorId: "me",
     length: "$50",
@@ -38,7 +38,7 @@ const courses = [
   },
   {
     id: "career-reboot-for-developer-mind",
-    title: "Becoming an Outlier: Reprogramming the Developer Mind",
+    title: "Sunflowers",
     watchHref: "http://www.pluralsight.com/courses/career-reboot-for-developer-mind",
     authorId: "me",
     length: "$30",
@@ -46,7 +46,7 @@ const courses = [
   },
   {
     id: "web-components-shadow-dom",
-    title: "Web Component Fundamentals",
+    title: "Wheat Field with Cypresses",
     watchHref: "http://www.pluralsight.com/courses/web-components-shadow-dom",
     authorId: "me",
     length: "$10",
