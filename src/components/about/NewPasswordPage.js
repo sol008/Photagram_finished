@@ -32,8 +32,8 @@ class NewPasswordPage extends React.Component {
           <br />
           <p>Click the button to reset your password</p>
 
-          <button onClick={this.resetPass.bind(this)}>reset</button>
-          <button onClick={this.checkReset.bind(this)}>check</button>
+          <button  onClick={this.resetPass.bind(this)}>reset</button>
+          <button id='b1' onClick={this.checkReset.bind(this)}>check</button>
 
           <br />
 

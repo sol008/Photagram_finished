@@ -1,10 +1,14 @@
-import React from 'react';
-import {Link} from 'react-router';
+import React, {PropTypes} from 'react';
+import { Link, IndexLink } from 'react-router';
+import {browserHistory} from "react-router";
 
 class RegisterPage extends React.Component {
 
   transition  ()  {
-    location.href = "MainPage.js";
+    browserHistory.push("main");
+    this.setState({
+      status: "loggedin"
+    });
   }
 
   render() {
