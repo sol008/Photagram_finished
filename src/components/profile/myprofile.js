@@ -6,6 +6,7 @@ import three from './3.jpg'
 import six from './6.jpg';
 import eleven from './11.jpg';
 import sixteen from './16.jpg';
+import {browserHistory} from 'react-router';
 var divStyle = {
   color: 'Blue'
 };
@@ -110,6 +111,12 @@ class myprofile extends React.Component {
       {document.getElementById("new").style.display = "none";}
 
   }
+
+    redirectToAddCoursePage() {
+    browserHistory.push('/courses');
+    console.log("the button is pressed")
+  }
+
   render() {
     return (
 
@@ -159,10 +166,10 @@ class myprofile extends React.Component {
     <div className="rightcolumn">
       <div className="card">
        <div className="checkOffer">
-       <form action="myoffers" method="get">
-          <button className = "button button2">My Offer</button>
 
-      </form>
+          <button className = "button button2" onClick={this.redirectToAddCoursePage} >My Offer</button>
+
+
             <form action="myorder" method="get">
           <button  className = "button button3">My Order</button>
            </form>
